@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <header>
+        <div class="header relative">
+            <img src="../public/images/bagan.jpg" alt="" class="w-full h-40">
+            <div class="w-full h-40 bg-gray-950 absolute top-0 left-0 bg-opacity-50"></div>
+        </div>
+    </header>
+    <div class=" w-full m-5 flex">
+        <div class="columns-6 w-full border-2 border-blue-700 flex flex-col">
+            <h2 class="block text-center">Accordion</h2>
+            <div class="accordion w-full max-w-auto " id="myaccordion" data-accordion="collapse">
+                <div class="accordion-item">
+                    <h2 class="accordion-heading" aria-expanded="true">
+                        <button  data-accordion-target="#accordion1" class="w-full flex flex-row justify-between bg-blue-600">
+                        <span class="text-white">Vission</span>
+                        <span>+</span>
+                         </button>
+                    </h2>
+                    <div class="accordion-body" id="accordion1" aria-expanded="false" >
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quasi nobis officiis soluta quos tenetur commodi consectetur, minima quidem fuga. Necessitatibus, deleniti commodi ipsam minus enim accusamus quibusdam quidem. Dolorem.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui esse, saepe suscipit quam ullam doloremque ratione tempora deleniti animi minus quaerat harum reprehenderit et sed laudantium molestias accusantium dolorum quisquam!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-heading" aria-expanded="false">
+                    <button data-accordion-target="#accordion2" class="w-full flex flex-row justify-between bg-red-600">
+                        <span class="text-white">Mission</span>
+                        <span>+</span>
+                    </button>
+                </h2>
+                <div class="accordion-body bg-green-600" id="accordion2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nobis accusantium minus adipisci deserunt, aperiam consectetur provident fuga rem velit perspiciatis cumque ipsum necessitatibus eos. Molestias explicabo iste ipsam excepturi!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nesciunt delectus veniam voluptatum. Soluta, nostrum a! Laborum nulla mollitia reprehenderit laudantium, exercitationem, excepturi veritatis quidem in assumenda quam rerum labore!</p>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+        <div class="columns-6 w-full flex flex-col">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr class="odd:bg-gray-700 even:bg-gray-600 even:text-gray-50">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-700 even:bg-gray-600 even:text-gray-50">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-700 even:bg-gray-600 even:text-gray-50">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div >
+        <ul class="flex flex-row gap-20 justify-center" data-tabs-toggle="#tabpanes">
+            <li class="bg-blue-600 p-4 rounded-md">
+                <button class="text-white" data-tabs-target="#research-pane" role="tab" aria-selected="true">Research</button>
+            </li>
+            <li class="bg-blue-600">
+                <button class="text-white p-4 rounded-md" data-tabs-target="#ojt-pane" role="tab" aria-selected="false">On Job Training</button>
+            </li>
+            <li class="bg-blue-600">
+                <button class="text-white p-4 rounded-md" data-tabs-target="#news-pane" role="tab" aria-selected="false">News</button>
+            </li>
+        </ul>
+        <div id="tabpanes " class="border-2 border-gray-900 p-4 m-2 ">
+            <div class="pane1" id="research-pane">
+                <h2>Research Pane</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cum sint enim laudantium similique deserunt iure non quaerat pariatur delectus culpa eos, dolores ipsum, recusandae quasi esse ducimus. Quibusdam, veritatis.</p>
+            </div>
+            <div class="pane2" id="ojt-pane">
+                <h2>OJT Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eius error excepturi atque, tenetur amet incidunt ratione. Dicta doloremque sint aut illo ducimus itaque dolores fugit tempora dolore! Suscipit, obcaecati?</p>
+            </div>
+            <div class="pane2" id="news-pane">
+                <h2>News Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione et saepe aliquid soluta suscipit reiciendis odio quibusdam sunt, adipisci doloribus? Debitis atque aliquid iusto? Commodi tenetur perspiciatis eaque recusandae nostrum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row m-2">
+    <div class="columns-3 flex flex-col w-full">
+        <ul data-tabs-toggle="#tabpanes">
+            <li>
+                <button data-tabs-target="#pane1" role="tab" aria-selected="true">BA</button>
+            </li>
+            <li>
+                <button data-tabs-target="#pane2" role="tab" aria-selected="false">MA</button>
+            </li>
+            <li>
+                <button data-tabs-target="#pane3" role="tab" aria-selected="false">PHD</button>
+            </li>
+        </ul>
+    </div>
+    <div class="columns-1 ">
+        <div class="tabpanes border-2 border-blue-500 p-2" id="tabpanes">
+            <div class="pane1" id="pane1">
+                <h2>Pane 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione illo fugiat illum corporis ipsam numquam voluptatem dolor, porro commodi. At amet exercitationem excepturi veritatis aspernatur corrupti earum fugiat sunt illum!</p>
+            </div>
+            <div class="pane2" id="pane2">
+                <h2>Pane 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem alias, animi unde enim nobis voluptatem amet similique numquam eveniet reprehenderit. Harum totam magnam repudiandae non eum nisi, soluta ipsum!</p>
+            </div>
+            <div class="pane3" id="pane3">
+                <h2>Pane 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatem officia illum deleniti dolorem voluptatibus ipsa porro suscipit blanditiis maxime cupiditate, consequatur ea in eius deserunt animi fugiat amet sequi.</p>
+            </div>
+
+        </div>
+       
+    </div>
+</div>
+
+<div class="w-full h-60 bg-gradient-to-r from-indigo-900 from-20% via-emerald-400 via-50% to-yellow-600"></div>
+   
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
